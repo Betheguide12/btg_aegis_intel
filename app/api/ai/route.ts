@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { evaluateAI, RawAIStats } from "@/lib/aiSentinel";
+import { evaluateAI, RawAIStats } from "../../../lib/aiSentinel";
 
 export const runtime = "nodejs";
 
