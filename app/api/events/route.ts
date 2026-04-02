@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { computeSeverity, RawEvent } from "@/lib/events";
+import { computeSeverity, RawEvent } from "../../../lib/events";
 
 export const runtime = "nodejs";
 
@@ -16,8 +16,7 @@ const mockEvents: RawEvent[] = [
     subType: "market_shock",
     description: "Index drop after policy announcement.",
     metrics: { magnitude: 5, speed: 0.3, spread: 0.6, casualties: 0, infraLoss: 120e6 }
-  },
-  // add more seed events here
+  }
 ];
 
 export async function GET() {
