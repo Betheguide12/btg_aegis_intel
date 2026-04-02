@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { EnrichedEvent, Severity } from "@/lib/events";
-import { EvaluatedAI } from "@/lib/aiSentinel";
+import type { EnrichedEvent, Severity } from "../lib/events";
+import type { EvaluatedAI } from "../lib/aiSentinel";
 import "leaflet/dist/leaflet.css";
 
 declare const L: any;
